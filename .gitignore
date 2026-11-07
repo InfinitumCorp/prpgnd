@@ -7,3 +7,5 @@ attachments
 !.grok/app-env.json
 *.log
 .DS_Store
+.wrangler
+.dev.vars*
