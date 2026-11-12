@@ -1,5 +1,6 @@
 import { cloneElement, isValidElement, useEffect, useId, useMemo, useState, type CSSProperties, type FormEvent, type PointerEvent, type ReactElement } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
+import { CumulusBar } from "@/components/cumulus-bar";
 import {
   aims,
   briefText,
@@ -219,6 +220,8 @@ export function SitePage() {
               {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
               <span className="sr-only">{menuOpen ? "Close menu" : "Open menu"}</span>
             </button>
+            <CumulusBar className="hidden md:flex" />
+            <CumulusBar className="flex md:hidden" create={false} />
           </div>
         </div>
         {menuOpen ? (
