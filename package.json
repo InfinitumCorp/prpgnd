@@ -24,6 +24,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.49.2",
     "@electric-sql/pglite": "^0.5.4",
     "@hookform/resolvers": "^5.7.0",
     "@radix-ui/react-accordion": "^1.2.12",
