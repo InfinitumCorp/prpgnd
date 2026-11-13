@@ -50,6 +50,8 @@ export const Route = createRootRoute({
         <AuthProvider>
           <Outlet />
         </AuthProvider>
+        {/* The Cumulus://ID account bar (sign-in, account menu, product launcher). */}
+        <script src="https://id.cumuluscloud.app/id/bar.js" data-client="prpgnd" defer />
         <Scripts />
       </body>
     </html>
